@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.contener {
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px; 
+    grid-template-areas: 
+        "head head"
+        "main aside"
+        "foot foot";
+}
+
+.head {
+    grid-area: head;
+    background: linear-gradient(90deg,#1970C2, #65a3ff);
+    color: white;
+    font-size: 50px;
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 0 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+}
+.head img {
+    width: 150px; 
+    height: auto;   
+}
+.main {
+    grid-area: main;
+    background-color: #549CDE;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    background: linear-gradient(90deg,#549CDE, #D3BDFF);
+}
+.temperatura {
+    color: white;
+    margin-left: 55px;
+    height: 400px;
+    width: 550px;
+    background: 
+        url("dlaczego-niebo-jest-niebieskie.png");
+        
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 5px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #549CDE;
+    color: white;
+    text-align: center;         
+    padding: 20px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    background: linear-gradient(-90deg,#F5A4C8, #D3BDFF); 
+    
+}
+.datatlo{
+    height: 400px;
+    width: 550px;
+    color: white;
+    margin-left: 55px;
+    background:     
+        url("rozowe-chmury.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 5px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.foot {
+    grid-area: foot;
+    background: linear-gradient(90deg,#1970C2, #65a3ff);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+}
+.flatpickr-calendar {
+    margin-left: 22%;
+    
+}
+.tlo-napisu {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.1px 5px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+button {
+    background: linear-gradient(90deg, #1970C2, #65a3ff);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:active {
+    transform: scale(0.95);
+}
+form {
+    margin-bottom: 20px;
+}
+#calendar {
+    margin-bottom: 20px;
+}
+.error {
+    background-color: rgba(200, 0, 0, 0.7);
+}
+.loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255,255,255,0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 100;
+}
