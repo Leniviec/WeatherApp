@@ -149,3 +149,7 @@ form {
     animation: spin 1s linear infinite;
     z-index: 100;
 }
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
