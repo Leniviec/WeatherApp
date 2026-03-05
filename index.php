@@ -1,5 +1,5 @@
 <?php
-$apiKey = "b3bd206cb49de5c5d3801a2c4f5888e9";
+$apiKey = "...";
 
 function fetchWeather($url) {
 
